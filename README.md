@@ -1,7 +1,7 @@
 ## Laboratoires
 
-* [Labo 1](https://github.com/vusophie/csi2532_playground/tree/lab01)]
-* [Labo 2](https://github.com/vusophie/csi2532_playground/tree/lab02)]
+* [Labo 1](https://github.com/vusophie/csi2532_playground/tree/lab01)
+* [Labo 2](https://github.com/vusophie/csi2532_playground/tree/lab02)
 
 ## Information
 * Nom: Sophie Vu
