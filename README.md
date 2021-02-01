@@ -1,6 +1,6 @@
 # Laboratoire 2
 
-Soumssion au laboratoire 2 pour CSI2532[A]. 
+Soumission au laboratoire 2 pour CSI2532[A]. 
 
 ## Utilisation du Query Tool de pgAdmin
 
