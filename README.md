@@ -1,6 +1,6 @@
 # Laboratoire 3
 
-Soumssion au laboratoire 3 pour CSI2532[A]. 
+Soumission au laboratoire 3 pour CSI2532[A]. 
 
 ## Exercice 1
 
