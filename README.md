@@ -9,7 +9,7 @@ professors(ssn INT NOT NULL, PRIMARY KEY (ssn), semesterid INT NOT NULL)
 courses(courseid INT NOT NULL, PRIMARY KEY (courseid))
 ```
 #### Diagramme de relation
-[![Diagramme_relation_1(https://github.com/vusophie/csi2532_playground/blob/lab04/Diagramme_relation_1.png)]
+[![Diagramme_relation_1]](https://github.com/vusophie/csi2532_playground/blob/lab04/Diagramme_relation_1.png)
 
 ### Exercice 2
 Chaque professeur doit enseigner un cours.
