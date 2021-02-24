@@ -18,19 +18,27 @@ teaches(semesterid INT NOT NULL, ssn INT NOT NULL, courseid INT NOT NULL, PRIMAR
 ### Exercice 3
 Chaque professeur enseigne exactement un cours (ni plus, ni moins).
 ```sh
-professors(ssn INT NOT NULL, PRIMARY KEY (ssn))
-courses(courseid INT NOT NULL, PRIMARY KEY (courseid), )
-teaches(semesterid INT NOT NULL, ssn INT NOT NULL, courseid INT NOT NULL, PRIMARY KEY (ssn, courseid), FOREIGN KEY ssn REFERENCES professors, FOREIGN KEY courseid REFERENCES courseid)
+professors(ssn INT NOT NULL, courseid INT NOT NULL, PRIMARY KEY (ssn), FOREIGN KEY courseid REFERENCES courses (courseid))
+courses(courseid INT NOT NULL, PRIMARY KEY (courseid))
 ```
 
 ### Exercice 4
 Chaque professeur enseigne exactement un cours (ni plus, ni moins), et chaque cours doit être enseigné par un professeur.
+```sh
+
+```
 
 ### Exercice 5
 Les professeurs peuvent enseigner le même cours sur plusieurs semestres et chaque doit être enregistrée.
+```sh
+
+```
 
 ### Exercice 6
 Supposons maintenant que certains cours puissent être enseignés conjointement par une équipe de professeurs, mais il est possible qu'aucun professeur dans une équipe ne puisse enseigner le cours. Modélisez cette situation en introduisant des ensembles d'entités et des ensembles de relations supplémentaires si nécessaire.
+```sh
+
+```
 
 
 
