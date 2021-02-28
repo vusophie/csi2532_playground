@@ -36,19 +36,32 @@ Find all users (name and email) and the property details (name, and city) and th
 ## Partie B
 ## B1 
 ## Question A
+Add appropriate spacing. 
+
 ![B1a](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1a.png)
+
 ## Question B
+Add appropriate spacing. 
+
 ![B1b](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1b.png)
+
 ## Question C
+Add 'users_2019.id' in the GROUP BY clause.
+
  ![B1c](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1c.png)
+ 
 ## B2
 ## Question A
+Find the names of all users that joined before Jan 1, 2020.
+
 ```sh
 SELECT name FROM userse WHERE join_date < '2020-01-01';
 ```
 ![B2a](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2a.png)
 
 ## Question B
+Show the number of software licenses of each user (even those without anylicenses). Sort the results by the number of licenses (most to least) and then by name (A - Z).
+
 ```sh
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS number_of_licenses FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name; 
 ```
@@ -67,6 +80,8 @@ SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id
 ![B2bii](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2b%20-%20order%20by%20name.png)
 
 ## Question C
+Insert additional data into the database to demonstrate the proper sorting of (b).
+
 ```sh
 INSERT INTO users(id, name, join_date) VALUES (47, 'sophie', '2020-02-27');
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id FROM users LEFT JOIN licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY users.name;
@@ -78,11 +93,15 @@ SELECT users.name AS user_name, COUNT(licenses, user_id) AS count_license_user_i
 ![B2d](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2d.png)
 
 ## Question D
+Update the sketch version to be version "51" (released Jan 1, 2020).
+
 ```sh
 UPDATE softwares SET version = '51', released_date = '2020-01-01' WHERE name = 'Sketch';
 ```
 ## B3
 ## Question A
+Add the software version to the licenses table.
+
 ```sh
 ALTER TABLE softwares
 ADD CONSTRAINT constraint_sw_vers (version);
@@ -94,14 +113,20 @@ ADD CONSTRAINT fk_sw_vers FOREIGN KEY (software_version) REFERENCES (version);
 END TRANSACTION;
 ```
 ## Question B
+Update the softwares table to include the name AND version as the primary key.
+
 ```sh
 BEGIN;
 ALTER TABLE DROP CONSTRAINT softwares_pkey;
 ALTER TABLE ADD PRIMARY KEY (name, version);
 ```
 ## Question C
+Update the licenses table to allow users to have multiple versions of the samesoftware. To demonstrate this works, add Sketch 52 to "andrew" user with access code"xxxyyy111". Do not hard code the user id, it should work for any database with an "andrew"user.
+
 ```sh
 ALTER TABLE licenses ALTER COLUMN user_id SET DEFAULT 48;
 INSERT INTO licenses VALUES (DEFAULT, 'Sketch', 'xxxyyy111', '52') ON CONFLICT(user_id, software_name) DO UPDATE SET user_id = DEFAULT, software_name = 'Ms Word';
 ```
-d) 
+## Question D
+Sketch is providing a promotion (access code "1monthfree") for version 52. Givethat license to anyone that does not yet it, allowing them to keep any older version they mighthave. Do not hard code the user list, it should work for any database.
+
