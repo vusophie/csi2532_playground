@@ -1,11 +1,11 @@
 # Devoir 1
 ## Partie A
 ### A1
-a) [![A1a]]()
-b)[![A1b]]()
-c)[![A1c]]()
+a) [![A1a]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1a).png)
+b)[![A1b]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1b).png)
+c)[![A1c]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1c).png)
 ### A2
-[![A2]]()
+[![A2]](https://github.com/vusophie/csi2532_playground/blob/devoir1/2.png)
 ### A3
 a) σ property.address LIKE '%Ottawa%' ∧ lease.date >= '2020-03-02' (property X lease)
 b) π user.name, user.email, property.name, property.address, lease.date, lease.daily_rate σ lease.date LIKE '%January 2020%' (user X property X lease)
