@@ -6,7 +6,7 @@
 * [Labo 4](https://github.com/vusophie/csi2532_playground/tree/lab04)
 
 ##  Devoirs
-* [Devoir 1]()
+* [Devoir 1](https://github.com/vusophie/csi2532_playground/blob/devoir1/README.md)
 
 ## Information
 * Nom: Sophie Vu
