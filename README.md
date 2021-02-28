@@ -1,4 +1,3 @@
-# Devoir 1
 ## Partie A
 ## A1 
 ## Question A 
@@ -37,36 +36,47 @@ Find all users (name and email) and the property details (name, and city) and th
 ## Partie B
 ## B1 
 ## Question A
-[![B1a]]()
+![B1a](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1a.png)
 ## Question B
-[![B1b]]()
+![B1b](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1b.png)
 ## Question C
- [![B1c]]()
+ ![B1c](https://github.com/vusophie/csi2532_playground/blob/devoir1/B1c.png)
 ## B2
 ## Question A
 ```sh
 SELECT name FROM userse WHERE join_date < '2020-01-01';
 ```
+![B2a](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2a.png)
+
 ## Question B
 ```sh
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS number_of_licenses FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name; 
 ```
+![B2b](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2b.png)
+
 Ordered by ID
 ```sh
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY licenses.user_id DESC;
 ```
+![B2bi](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2b%20-%20order%20by%20id.png)
+
 Ordered by name
 ```sh
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name ORDER BYusers.name
 ```
+![B2bii](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2b%20-%20order%20by%20name.png)
+
 ## Question C
 ```sh
 INSERT INTO users(id, name, join_date) VALUES (47, 'sophie', '2020-02-27');
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id FROM users LEFT JOIN licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY users.name;
 ```
+![B2c](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2c.png)
 ```sh
 SELECT users.name AS user_name, COUNT(licenses, user_id) AS count_license_user_id FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY licenses.user_id DESC;
 ```
+![B2d](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2d.png)
+
 ## Question D
 ```sh
 UPDATE softwares SET version = '51', released_date = '2020-01-01' WHERE name = 'Sketch';
