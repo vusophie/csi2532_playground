@@ -86,14 +86,14 @@ Insert additional data into the database to demonstrate the proper sorting of (b
 INSERT INTO users(id, name, join_date) VALUES (47, 'sophie', '2020-02-27');
 SELECT users.name AS user_name, COUNT(licenses.user_id) AS count_license_user_id FROM users LEFT JOIN licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY users.name;
 ```
-![B2c](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2c.png)
 ```sh
 SELECT users.name AS user_name, COUNT(licenses, user_id) AS count_license_user_id FROM users LEFT JOIN licenses ON users.id = licenses.user_id GROUP BY licenses.user_id, users.name ORDER BY licenses.user_id DESC;
 ```
-![B2d](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2d.png)
+![B2c](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2c.png)
 
 ## Question D
 Update the sketch version to be version "51" (released Jan 1, 2020).
+![B2d](https://github.com/vusophie/csi2532_playground/blob/devoir1/B2d.png)
 
 ```sh
 UPDATE softwares SET version = '51', released_date = '2020-01-01' WHERE name = 'Sketch';
@@ -112,6 +112,8 @@ ALTER TABLE licenses
 ADD CONSTRAINT fk_sw_vers FOREIGN KEY (software_version) REFERENCES (version);
 END TRANSACTION;
 ```
+![B3a](https://github.com/vusophie/csi2532_playground/blob/devoir1/B3a.png)
+
 ## Question B
 Update the softwares table to include the name AND version as the primary key.
 
@@ -120,6 +122,7 @@ BEGIN;
 ALTER TABLE DROP CONSTRAINT softwares_pkey;
 ALTER TABLE ADD PRIMARY KEY (name, version);
 ```
+
 ## Question C
 Update the licenses table to allow users to have multiple versions of the samesoftware. To demonstrate this works, add Sketch 52 to "andrew" user with access code"xxxyyy111". Do not hard code the user id, it should work for any database with an "andrew"user.
 
