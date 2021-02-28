@@ -1,9 +1,9 @@
 # Devoir 1
 ## Partie A
-### A1
-a) [![A1a]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1a).png)
-b)[![A1b]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1b).png)
-c)[![A1c]](https://github.com/vusophie/csi2532_playground/blob/devoir1/1c).png)
+### A1 
+a) ![A1a](https://github.com/vusophie/csi2532_playground/blob/devoir1/1a.png)
+b)![A1b](https://github.com/vusophie/csi2532_playground/blob/devoir1/1b.png)
+c)![A1c](https://github.com/vusophie/csi2532_playground/blob/devoir1/1c.png)
 ### A2
 [![A2]](https://github.com/vusophie/csi2532_playground/blob/devoir1/2.png)
 ### A3
