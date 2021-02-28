@@ -1,13 +1,13 @@
 # Devoir 1
 ## Partie A
 ### A1 
-a) 
+##### A 
 ![A1a](https://github.com/vusophie/csi2532_playground/blob/devoir1/1a.png)
 
-b)
+##### B
 ![A1b](https://github.com/vusophie/csi2532_playground/blob/devoir1/1b.png)
 
-c)
+#### C
 ![A1c](https://github.com/vusophie/csi2532_playground/blob/devoir1/1c.png)
 
 ### A2
