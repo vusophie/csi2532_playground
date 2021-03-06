@@ -16,3 +16,8 @@ Soumission au laboratoire 5.
 ![insert_schema_migrations](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/migration_insert_test2.png)
 9. Tester migration dans une nouvelle base de données.
 ![migration_test](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/leaderboard_migrated_test.png)
+
+## Information
+* Nom: Sophie Vu
+* Courriel: svu043@uottawa.ca
+* ID: 300113938
