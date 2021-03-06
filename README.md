@@ -28,6 +28,8 @@ Soumission au laboratoire 5.
 
 ![migration_test](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/leaderboard_migrated_test.png)
 
+9. Créer un dossier pour les backups et insérer [v1.sql](https://github.com/vusophie/csi2532_playground/tree/lab05/db/backups).
+
 ## Information
 * Nom: Sophie Vu
 * Courriel: svu043@uottawa.ca
