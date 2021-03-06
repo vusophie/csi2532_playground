@@ -3,7 +3,7 @@
 Soumission au laboratoire 5.
 
 1. Créer base de données leaderboard_migrated.
-[![leaderboard_migrated](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/leaderboard_migrated.png)]
+![leaderboard_migrated](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/leaderboard_migrated.png)
 
 2. Exécuter [script de migration](https://github.com/vusophie/csi2532_playground/blob/lab05/db/migrations/20210306140700-create-athletes.sql).
 3. Exécuter exemples de scripts.
