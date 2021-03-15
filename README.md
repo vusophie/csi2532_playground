@@ -5,6 +5,8 @@
 * [Labo 3](https://github.com/vusophie/csi2532_playground/blob/lab03/README.md)
 * [Labo 4](https://github.com/vusophie/csi2532_playground/tree/lab04)
 * [Labo 5](https://github.com/vusophie/csi2532_playground/blob/lab05/README.md)
+* [Lab 6](https://github.com/vusophie/csi2532_playground/blob/lab06/README.md)
+
 ##  Devoirs
 * [Devoir 1](https://github.com/vusophie/csi2532_playground/blob/devoir1/README.md)
 
