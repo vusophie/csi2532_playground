@@ -58,3 +58,4 @@ INSERT INTO competitions (name, venue, start_date, duration) VALUES
 ```
 
 ### E3. Matrice d'évènements
+[q3]!(https://github.com/vusophie/csi2532_playground/tree/lab07)
