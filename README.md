@@ -1,7 +1,7 @@
 ## Laboratoire 7
 Soumission au laboratoire 7.
 
-## E1. Données sur les athlètes
+### E1. Données sur les athlètes
 Schéma:
 ``` 
 CREATE TABLE athletes (
@@ -37,7 +37,7 @@ INSERT INTO athletes (name, email, dob, gender) VALUES
 ('Mike Tyson, 'mtyson@gmail.com', '1966-06-30', 'Male'); 
 ```
 
-## E2. Données sur les compétitions
+### E2. Données sur les compétitions
 Schéma :
 ``` 
 CREATE TABLE competitions (
@@ -57,6 +57,4 @@ INSERT INTO competitions (name, venue, start_date, duration) VALUES
 ('Marathon Row', 'Madison Square Garden', '2021-02-16', 2);  
 ```
 
-## E3. Matrice d'évènements
-
-## E4. Modèles de base de données
+### E3. Matrice d'évènements
