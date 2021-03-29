@@ -3,7 +3,8 @@ Soumission au laboratoire 7.
 
 ## E1. Données sur les athlètes
 Schéma:
-``` CREATE TABLE athletes (
+``` 
+CREATE TABLE athletes (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(70) NOT NULL,
 	email VARCHAR(255) NOT NULL,
@@ -12,7 +13,8 @@ Schéma:
 	); 
 ``` 
 Seed:
-``` INSERT INTO athletes (name, email, dob, gender) VALUES 
+``` 
+INSERT INTO athletes (name, email, dob, gender) VALUES 
 ('Serena Williams', 'swilliams@gmail.com', '1981-09-26', 'Female'),
 ('Simone Biles', 'sbiles@gmail.com', '1997-03-14', 'Female'),
 ('Zhu Ting', 'zting@gmail.com', '1994-11-29', 'Female'),
@@ -32,33 +34,26 @@ Seed:
 ('Tatyana Ledovskaya, 'tledovskaya@gmail.com', '1966-05-21', 'Female'),
 ('Boris Becker', 'bbecker@gmail.com', '1967-10-22', 'Male'),
 ('Nadine Broersen, 'nbroersen@gmail.com', '1990-04-29', 'Female'),
-('Mike Tyson, 'mtyson@gmail.com', '1966-06-30', 'Male'); ```
+('Mike Tyson, 'mtyson@gmail.com', '1966-06-30', 'Male'); 
+```
 
 ## E2. Données sur les compétitions
 Schéma :
-``` CREATE TABLE competitions (
-
-name VARCHAR(50) PRIMARY KEY, 
-
-venue VARCHAR(50), 
-
-start_date DATE, 
-
-duration INT
-
+``` 
+CREATE TABLE competitions (
+	name VARCHAR(50) PRIMARY KEY, 
+	venue VARCHAR(50), 
+	start_date DATE, 
+	duration INT
 ); 
 ```
 Seed :
-``` INSERT INTO competitions (name, venue, start_date, duration) VALUES 
-
+``` 
+INSERT INTO competitions (name, venue, start_date, duration) VALUES 
 ('Burpee Challenge', 'Fenway Park', '2021-02-14', 1),
-
 ('Handstand Hold', 'Madison Square Garden', '2021-02-14', 3),
-
 ('Corn Sack Sprint', 'Fenway Park', '2021-02-15', 1),
-
 ('Snatch Speed Triple', 'AT&T Stadium', '2021-02-15', 1),
-
 ('Marathon Row', 'Madison Square Garden', '2021-02-16', 2);  
 ```
 
