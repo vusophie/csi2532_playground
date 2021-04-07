@@ -1,17 +1,20 @@
-## Laboratoires
+## Laboratoire 8
+Soumission au laboratoire 8.
 
-* [Labo 1](https://github.com/vusophie/csi2532_playground/tree/lab01)
-* [Labo 2](https://github.com/vusophie/csi2532_playground/tree/lab02)
-* [Labo 3](https://github.com/vusophie/csi2532_playground/blob/lab03/README.md)
-* [Labo 4](https://github.com/vusophie/csi2532_playground/tree/lab04)
-* [Labo 5](https://github.com/vusophie/csi2532_playground/blob/lab05/README.md)
-* [Labo 6](https://github.com/vusophie/csi2532_playground/blob/lab06/README.md)
-* [Labo 7](https://github.com/vusophie/csi2532_playground/tree/lab07/README.md)
-##  Devoirs
-* [Devoir 1](https://github.com/vusophie/csi2532_playground/blob/devoir1/README.md)
+### E1. Configurer PHPAPP
+![Ex1](https://github.com/vusophie/csi2532_playground/blob/lab08/E1.png)
 
-## Information
-* Nom: Sophie Vu
-* Courriel: svu043@uottawa.ca
-* ID: 300113938
+### E2. Créer un client
+Schéma :
+``` 
+CREATE TABLE clients (
+  name VARCHAR(100), 
+  token VARCHAR(100) UNIQUE,
+  data JSONB)
+); 
+```
+### E3. Créer un API
+![server_conn](https://github.com/vusophie/csi2532_playground/blob/lab08/server_conn.png)
+![curl_success](https://github.com/vusophie/csi2532_playground/blob/lab08/curl_success.png)
+![getallheaders_success](https://github.com/vusophie/csi2532_playground/blob/lab08/getallheaders_success.png)
 
