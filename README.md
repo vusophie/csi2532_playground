@@ -2,7 +2,7 @@
 Soumission au laboratoire 8.
 
 ### E1. Configurer PHPAPP
-![Ex1](https://github.com/vusophie/csi2532_playground/blob/lab08/E1.png)
+![Ex1](https://github.com/vusophie/csi2532_playground/blob/lab08/Ex1.png)
 
 ### E2. Créer un client
 Schéma :
