@@ -1,6 +1,7 @@
 ## Laboratoire 9
 Soumission au laboratoire 9.
 
+## Partie 1
 ### Q1a
 a) AB b) 3NF mais pas BNCF
 ### Q1b
@@ -12,6 +13,7 @@ a) ABC b) Ni 3NF ou BNCF
 ### Q1e
 a) AB b) 3NF et BNCF
 
+## Partie 2
 ### Q2a
 (AB)+ = AB
  = ABC
@@ -28,6 +30,7 @@ Ainsi, B -> C n'est pas valide.
 ### Q2d
 Selon Q2b et Q2c, ni A -> C ou B -> C est valide.
 
+## Partie 3
 ### Q3
 On peut combiner B -> A et D -> A.
 On obtient:
@@ -36,6 +39,7 @@ Fc = {
     AB -> D
 }
 
+## Partie 4
 ### Q4
 Fermetures:
 * (A)+ = DEA
