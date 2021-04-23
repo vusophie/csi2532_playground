@@ -157,11 +157,11 @@ Color
 |0|0|1|
 
 ### b. Show how bitmap indices can be used to answer the queries:
-	i. Show the Brand of all cars that are not black.
-	We analyse the bitmap for Black: [0 0 1 1]. We take the tuples in the relation where the entries are 1. Thus, the 3rd and 4th tuples are taken. The final result is the corresponding tuples. 
+i. Show the Brand of all cars that are not black.
+We analyse the bitmap for Black: [0 0 1 1]. We take the tuples in the relation where the entries are 1. Thus, the 3rd and 4th tuples are taken. The final result is the corresponding tuples. 
 
-	ii. Give the total number of red Opel cars with a medium risk score.
-	We analyse the result of (bitmap for Opel) AND (bitmap for Red): [0 1 0 0]. We take the tuples in the relation where the entries are 1. We then check the tuples where Risk=medium. The tuples that satisfy this condition are counted. Thus, only the 2nd tuples is counted. The final result is 1. 
+ii. Give the total number of red Opel cars with a medium risk score.
+We analyse the result of (bitmap for Opel) AND (bitmap for Red): [0 1 0 0]. We take the tuples in the relation where the entries are 1. We then check the tuples where Risk=medium. The tuples that satisfy this condition are counted. Thus, only the 2nd tuples is counted. The final result is 1. 
 
 ## Q7. Hashing
 Consider the following hash function:
