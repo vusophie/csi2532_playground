@@ -19,7 +19,7 @@ To be in BCNF, the left side of all FDs in R have to contain a key.
 (D)+ -> AD
 
 None of the FDs in R contain either B or AB. We can decompose R into BCNF relations with lossless join. 
-
+```
 S1(A, B, C) //Attributes in AB -> C
 	- Only FD is AB -> C
 	- AB is key for S1
@@ -37,7 +37,8 @@ S2(A, B, D) //All left side attributes + missing attributes
 		- Only FD is AB -> C
 		- AB is key for FD
 		- Only FD has key on left side so S4 is in BCNF
-	
+```
+
 Final schema contains 2 relations:
 S1(A, B, C)
 S3(C, D)
