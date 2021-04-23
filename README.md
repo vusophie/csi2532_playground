@@ -163,6 +163,7 @@ Color
 |0|0|1|
 
 ### b. Show how bitmap indices can be used to answer the queries:
+
 i. Show the Brand of all cars that are not black.
 We analyse the bitmap for Black: [0 0 1 1]. We take the tuples in the relation where the entries are 1. Thus, the 3rd and 4th tuples are taken. The final result is the corresponding tuples. 
 
@@ -170,14 +171,17 @@ ii. Give the total number of red Opel cars with a medium risk score.
 We analyse the result of (bitmap for Opel) AND (bitmap for Red): [0 1 0 0]. We take the tuples in the relation where the entries are 1. We then check the tuples where Risk=medium. The tuples that satisfy this condition are counted. Thus, only the 2nd tuples is counted. The final result is 1. 
 
 ## Q7. Hashing
+
 Consider the following hash function:
 ```
 h(x) = x mod 4
 ```
 ### a. Use this function to build the hash index of the following search key values: 2, 4, 6, 12, 13, 16, 20, 24, 28, 40.
+
 |000|001|010|011|100|101|110|111|
 |---|---|---|---|---|---|---|---|
 |4, 12, 16, 20 (overflow)|13|2, 6|/|/|/|/|/|
 
 ### b. Given the search key values, is this function a good hash function? Explain your answer.
+
 No. There are too many search key values that have to go in the 000 bucket, despite having previously split the 0 and 00 buckets and rehashed their contents for the remaining values. It'd be better to use search key values that aren't multiples of 4. 
