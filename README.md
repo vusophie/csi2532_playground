@@ -115,19 +115,19 @@ Boat(bid, bname, bcolor)
 {<C> | <I, N, C> ∈ Boats ∧ <S, I, D> ∈ Reserves ∧ <S, 'Lubber', R, A> ∈ Sailors}
 
 ## Q4. RAID
-a. 1 -> B
+1 -> B
 I can use a RAID level 0 technique because I'm not concerned with losing data. My main goal is to be able to read and write at high speed.
 
-b. 2 -> C
+2 -> C
 I can use a RAID level 1 technique because I only have two disks available which represent more than the double of the capacity that I need for my application and I'm concerned with being able to recover data if necessary.
 
-c. 3 -> E
+3 -> E
 I can use a RAID level 5 technique because fault tolerance is important for my application but I don't have much space available to spare. 
 
-d. 4 -> A
+4 -> A
 I can use a RAID level 6 technique because fault tolerance is important for my application and I need to protect my data even if two disks fail at the same time.
 
-e. 5 -> C
+5 -> C
 I prefer to use a parity-based approach instead of a mirrored approach because I have 6 disks available but I need the capacity of 5 of them which means that I can only spare the space corresponding to a single disk to ensure redundancy.
 
 ## Q5. B+ -tree
