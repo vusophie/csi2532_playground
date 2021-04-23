@@ -11,6 +11,7 @@
 * [Labo 9](https://github.com/vusophie/csi2532_playground/blob/lab09/README.md)
 ##  Devoirs
 * [Devoir 1](https://github.com/vusophie/csi2532_playground/blob/devoir1/README.md)
+* [Devoir 2](https://github.com/vusophie/csi2532_playground/tree/devoir2)
 
 ## Information
 * Nom: Sophie Vu
