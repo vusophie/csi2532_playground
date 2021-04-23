@@ -1,3 +1,9 @@
+Soumission pour le devoir 2.
+
+|Nom|Courriel|ID|
+|---|---|---|
+|Sophie Vu|svu043@uottawa.ca|300113938|
+
 ## Q1: Normalisation
 Consider a relation with the schema R(A, B, C, D) and the set F of functional dependencies:
 ```
