@@ -14,9 +14,11 @@ The candidate key is AB.
 
 ### b. Indicate all BCNF violations for R and decompose the relations into collections of relations that are in BCNF. 
 To be in BCNF, the left side of all FDs in R have to contain a key.
+```
 (AB)+ -> ABC
 (C)+ -> CD
 (D)+ -> AD
+```
 
 None of the FDs in R contain either B or AB. We can decompose R into BCNF relations with lossless join. 
 ```
@@ -40,8 +42,10 @@ S2(A, B, D) //All left side attributes + missing attributes
 ```
 
 Final schema contains 2 relations:
+```
 S1(A, B, C)
 S3(C, D)
+```
 
 ### c. Indicate which dependencies, if any, are not preserved by the BCNF decomposition. 
 The decomposition is not lossless because there is no common attribute in S1 and S3. We lose the following depencendy: D -> A.
@@ -59,24 +63,28 @@ F {
 ```
 
 ### b. List all candidate keys.
+```
 (NINcontractNo)+ -> NIN, contractNo, housePerWeek, eName, hotelNo, hotelLocation
 (NIN)+ -> NIN, eName, contractNo, housePerWeek
 (hotelNo)+ -> hotelNo, hotelLocation
 (contractNo)+ -> hotelNo, hotelLocation
+```
 
 The candidate key is NINcontractNo.
 
 ### c. Normalize the relation to the third Normal Form and show the resulting relations.
 There must be no transitive dependency such that if there exists 2 FDs A -> B and B -> C, the FD A -> C doesn't exist. 
-
+```
 NINcontractNo -> housePerWeek, NIN, contractNo
 NIN -> eName
 contractNo -> hotelNo
+```
 
 Thus, eName and hotelNo are transitively dependant on NINcontractNo. This violates the 3NF. To convert it in 3NF, we can decompose the relation R(NIN, contractNo, housePerWeek, eName, hotelNo, hotelLocation) as:
-
+```
 Staff(NIN, contractNo, housePerWeek, hotelLocation)
 Signed(NIN_ID, eName, contractNo, hotelNo)
+```
 
 ## Q3. Pure languages
 Consider the following relational schemas:
