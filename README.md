@@ -19,13 +19,6 @@ To be in BCNF, the left side of all FDs in R have to contain a key.
 (D)+ -> AD
 
 None of the FDs in R contain either B or AB. We can decompose R into BCNF relations with lossless join. 
-Steps:
-1. Compute the keys for R using FDs.
-2. Repeat until all relations are in BCNF:
-	a. Pick any R' with A -> B that violates BCNF.
-	b. Decompose R' into R1(A, B) and R2(A, Rest)
-	c. Compute FDs for R1 and R2.
-	d. Compute keys for R1 and R2. 
 
 S1(A, B, C) //Attributes in AB -> C
 	- Only FD is AB -> C
@@ -44,6 +37,7 @@ S2(A, B, D) //All left side attributes + missing attributes
 		- Only FD is AB -> C
 		- AB is key for FD
 		- Only FD has key on left side so S4 is in BCNF
+	
 Final schema contains 2 relations:
 S1(A, B, C)
 S3(C, D)
